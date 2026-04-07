@@ -4,3 +4,5 @@ exports.requireAuth = (req, res, next) => {
   }
   next();
 };
+// Ensures session is valid before attemtpting to waste futher backend resources 
+// by accessing a controller function

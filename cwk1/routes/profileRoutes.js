@@ -1,8 +1,7 @@
 const express = require('express');
 const profileRouter = express.Router();
 
-const profileController = require('../Controller/profile');
-
+const profileController = require('../Controller/profileController');
 
 // ==========================
 // CORE PROFILE ROUTES

@@ -73,7 +73,7 @@ exports.createProfile = async (req, res) => {
     res.status(201).json({ message: 'Profile created successfully', profile });
   } catch (error) {
     res.status(500).json({ message: 'Error creating profile', error: error.message });
-  }
+  } // Fallback error message
 };
 
 /**
@@ -210,7 +210,7 @@ exports.addDegree = async (req, res) => {
       { account: userId },
       { $push: { degrees: req.body } },
       { new: true, runValidators: true }
-    );
+    ); // adds degree to array of degrees. 
 
     if (!profile) {
       return res.status(404).json({ message: 'Profile not found' });

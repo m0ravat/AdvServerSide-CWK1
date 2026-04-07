@@ -45,7 +45,7 @@ const options = {
     info: {
       title: 'Profile API',
       version: '1.0.0',
-      description: 'API documentation for your profile system',
+      description: 'API documentation for my profile system',
     },
     servers: [
       {

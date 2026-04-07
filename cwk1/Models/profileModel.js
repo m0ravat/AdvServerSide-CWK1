@@ -21,7 +21,7 @@ const ProfileSchema = new mongoose.Schema(
       type: String,
       validate: {
         validator: function (v) {
-          return !v || /^https?:\/\/(www\.)?linkedin\.com\/.+/.test(v);
+          return !v || /^https?:\/\/(www\.)?linkedin\.com\/.+/.test(v); // Makes sure site is on linkedin
         },
         message: 'Please provide a valid LinkedIn URL',
       },
@@ -46,7 +46,7 @@ const ProfileSchema = new mongoose.Schema(
           type: String,
           validate: {
             validator: function (v) {
-              return !v || /^https?:\/\/.+/.test(v);
+              return !v || /^https?:\/\/.+/.test(v); // makes sure site has https
             },
             message: 'Please provide a valid URL',
           },
@@ -151,7 +151,7 @@ const ProfileSchema = new mongoose.Schema(
         },
         addedAt: {
           type: Date,
-          default: Date.now,
+          default: Date.now, //current date
         },
       },
     ],
