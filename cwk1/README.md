@@ -4,7 +4,10 @@ For disclaimer: I didn't keep in mind I had to put the project in a directory fo
 
 ## .gitignore and .env files 
 
-My .gitignore ignores the node_modules file as asked by the module leader, and has .emv representing my environmental variables file. I made sure not to hide it so the keys used are transparent for the assessment, after my final grade is given post moderation I will remove it to not expose that database more than necessary. 
+My .gitignore ignores the node_modules file as asked by the module leader, and has .emv representing my environmental variables file. I made sure not to hide it so the keys used are transparent for the assessment, after my final grade is given post moderation I will remove it to not expose that database more than necessary.    
+
+MY_SECRET_KEY - For creating a session (random string of characters)  
+DB_LINK - Connection String provided by MongoDB
 
 ## Design Decisions
 
